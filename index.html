@@ -8,88 +8,88 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="top-header">
-            <div class="header-container">
-                <div class="logo">
-                    <img src="./image/logo/logo.png" alt="Logo of the website">
-                </div>
+  <header>
+    <div class="top-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="./image/logo/logo.png" alt="Logo of the website">
+            </div>
 
-                <div class="search">
-                    <input type="text" placeholder="Search...">
-                    <button class="search-btn">
-                        <i class="fas fa-search"></i>
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- Original Navigation -->
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="upcoming.html">Upcoming</a></li>
+                    <li><a href="f&q.html">Q & A</a></li>
+                    <li><a href="about.html">About/Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="user-actions">
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button class="user-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+
+            <!-- Hamburger Menu Button -->
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <div class="mobile-menu-header">
+                    <button class="close-menu-btn">
+                        <i class="fas fa-times"></i>
                     </button>
                 </div>
-
-                <!-- Top Navigation -->
-                <nav class="top-nav">
+                <nav>
                     <ul>
-                        <li><a href="index.html" class="active">Home</a></li>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="upcoming.html">Upcoming</a></li>
-                        <li><a href="faq.html">Q & A</a></li>
+                        <li><a href="f&q.html">Q & A</a></li>
                         <li><a href="about.html">About/Contact Us</a></li>
+                        <li><a href="games.html"><i class="fas games"></i> Games</a></li>
+                        <li><a href="consoles.html"><i class="fab consoles"></i> Consoles</a></li>
+                        <li><a href="periphals.html"><i class="fab peripherals"></i> Gaming peripherals</a></li>
                     </ul>
                 </nav>
-
                 <div class="user-actions">
                     <button class="cart-btn">
                         <i class="fas fa-shopping-cart"></i>
+                        Shopping Cart
                     </button>
                     <button class="user-btn">
                         <i class="fas fa-user"></i>
+                        My Profile
                     </button>
                 </div>
-
-                <!-- Hamburger Menu Button -->
-                <button class="mobile-menu-btn">
-                    <i class="fas fa-bars"></i>
-                </button>
-
-                <!-- Mobile Menu -->
-                <div class="mobile-menu">
-                    <div class="mobile-menu-header">
-                        <button class="close-menu-btn">
-                            <i class="fas fa-times"></i>
-                        </button>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="upcoming.html">Upcoming</a></li>
-                            <li><a href="faq.html">Q & A</a></li>
-                            <li><a href="about.html">About/Contact Us</a></li>
-                            <li><a href="games.html"><i class="fas fa-gamepad"></i> Games</a></li>
-                            <li><a href="consoles.html"><i class="fas fa-tv"></i> Consoles</a></li>
-                            <li><a href="peripherals.html"><i class="fas fa-keyboard"></i> Gaming Peripherals</a></li>
-                        </ul>
-                    </nav>
-                    <div class="user-actions">
-                        <button class="cart-btn">
-                            <i class="fas fa-shopping-cart"></i>
-                            Shopping Cart
-                        </button>
-                        <button class="user-btn">
-                            <i class="fas fa-user"></i>
-                            My Profile
-                        </button>
-                    </div>
-                </div>
             </div>
         </div>
+    </div>
 
-        <div class="bottom-header">
-            <div class="header-container">
-                <nav class="platform-nav">
-                    <ul>
-                        <li><a href="games.html"><i class="fas fa-gamepad"></i> Games</a></li>
-                        <li><a href="consoles.html"><i class="fas fa-tv"></i> Consoles</a></li>
-                        <li><a href="peripherals.html"><i class="fas fa-keyboard"></i> Gaming Peripherals</a></li>
-                    </ul>
-                </nav>
-            </div>
+    <div class="bottom-header">
+        <div class="header-container">
+            <nav class="platform-nav">
+                <ul>
+                    <li><a href="games.html"><i class="fas games"></i> Games</a></li>
+                    <li><a href="consoles.html"><i class="fab consoles"></i> Consoles</a></li>
+                    <li><a href="periphals.html"><i class="fab peripherals"></i> Gaming peripherals</a></li>
+                </ul>
+            </nav>
         </div>
-    </header>
+    </div>
+</header>
 
     <main>
         <section class="hero">
@@ -113,6 +113,8 @@
         </section>
 
         <section class="quick-links">
+            <!-- Added heading to section -->
+            <h2>Quick Links</h2>
             <div class="container">
                 <a href="#" class="link-item">Game Collection →</a>
                 <a href="#" class="link-item">Upcoming Games →</a>
@@ -147,7 +149,7 @@
                 <button class="see-more" onclick="location.href='games.html';">See More</button>
             </div>
         </section>
-        
+
         <section class="upcoming-games">
             <div class="container">
                 <h2>Upcoming Games</h2>
@@ -174,7 +176,7 @@
                 <button class="see-more" onclick="location.href='games.html';">See More</button>
             </div>
         </section>
-        
+
         <section class="console-releases">
             <div class="container">
                 <h2>Explore the Latest Console Releases</h2>
@@ -193,7 +195,7 @@
                     </div>
                     <div class="console-card">
                         <a href="404error.html">
-                            <img src="./image/Homepage/steamdeck.jpg" alt="SteamDeck">
+                            <img src="./image/Homepage/steamdeck.jpg" alt="Steam Deck">
                             <div class="card-text">Steam Deck</div>
                         </a>
                     </div>
@@ -206,7 +208,7 @@
                 </div>
             </div>
         </section>
-        
+
         <section class="pre-owned">
             <div class="container">
                 <h2>Pre-Owned Deals</h2>
