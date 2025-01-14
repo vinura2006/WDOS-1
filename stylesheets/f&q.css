@@ -1,0 +1,571 @@
+:root {
+    --primary-color: #ff4500;
+    --background-dark: #1a1a1a;
+    --text-color: #ffffff;
+    --card-background: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--background-dark);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+/* Header  */
+.header-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.top-header {
+    background-color: rgba(26, 26, 26, 0.95);
+    padding: 15px 0;
+}
+
+.top-header .header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 250px;
+}
+
+.logo img {
+    width: 100%;
+    height: auto;
+}
+
+.top-nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.top-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.top-nav {
+    background-color: rgba(214, 214, 214, 0.4);
+    padding: 10px 20px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+.user-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.cart-btn, .user-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+        /* active style for top nav bar */
+.top-nav ul li a.active {
+    color: var(--primary-color);
+    font-size: 1.1rem; 
+    font-weight: bold;
+    transform: scale(1.1);
+    display: inline-block;
+}
+
+/* Bottom Header */
+.bottom-header {
+    background: #000000;
+    padding: 15px 0;
+}
+
+.bottom-header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.platform-nav ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+}
+
+.platform-nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.search {
+    position: relative;
+    width: 300px;
+}
+
+.search input {
+    width: 100%;
+    padding: 12px 45px 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 50px;
+    color: var(--text-color);
+}
+
+
+.search-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: var(--primary-color);
+    border: none;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.search-btn svg {
+    fill: #fff;
+    width: 16px;
+    height: 16px;
+}
+
+/* Hamburger Menu icon */
+.mobile-menu-btn {
+    display: none; 
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 5px;
+}
+
+/* Mobile Menu Contaner */
+.mobile-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 80%;
+    height: 100vh;
+    background-color: var(--background-dark);
+    padding: 20px;
+    transition: right 0.3s ease;
+    z-index: 1000;
+}
+
+.mobile-menu.active {
+    right: 0;
+}
+
+.mobile-menu-header {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+}
+
+.close-menu-btn {
+    background: transparent;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.mobile-menu ul li {
+    margin-bottom: 15px;
+}
+
+.mobile-menu a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    padding: 10px 0;
+}
+
+/* Mobile Menu User  */
+.mobile-menu .user-actions {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+            /* mobile menu active effect */
+.mobile-menu ul li a.active {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.mobile-menu .user-actions button {
+    width: 100%;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: var(--text-color);
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.mobile-menu .user-actions button:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.mobile-menu .user-actions i {
+    font-size: 1.2rem;
+}
+
+        /*  Hide mobile elements when it is desktop */
+@media (min-width: 769px) {
+    .mobile-menu-btn, 
+    .mobile-menu {
+        display: none !important;
+    }
+}
+
+/* Mobile menu size */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+
+    .mobile-menu {
+        display: block;
+    }
+
+    .top-nav, 
+    .platform-nav,
+    .header-container > .user-actions {
+        display: none;
+    }
+
+    .top-header .header-container {
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .bottom-header {
+        display: none;
+    }
+
+    .search {
+        width: 200px;
+        margin: 0 15px;
+    }
+
+    .search input {
+        padding: 8px 35px 8px 15px;
+    }
+
+    .search-btn {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+
+.faq-page {
+    min-height: calc(100vh - 200px);
+    padding: 40px 0;
+    background-color: var(--background-dark);
+}
+
+
+
+/* FAQ Section Styles */
+.faq-section {
+    margin-bottom: 60px;
+}
+
+.faq-section h1 {
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    font-size: 24px;
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faq-question {
+    padding: 15px;
+    color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.toggle-icon {
+    font-size: 20px;
+    color: var(--text-color);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 15px 15px;
+    color: rgba(255, 255, 255, 0.7);
+    display: none;
+    line-height: 1.6;
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+/* Contact Form  */
+.contact-section {
+    padding: 40px 0;
+}
+
+.contact-form-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.contact-form-container h2 {
+    color: var(--text-color);
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 16px;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.submit-btn {
+    display: block;
+    width: 200px;
+    margin: 30px auto 0;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    color: var(--text-color);
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* mobile */
+@media (max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+    
+    .contact-form-container {
+        padding: 20px;
+    }
+    
+    .submit-btn {
+        width: 100%;
+    }
+}
+
+
+
+/* Footer */
+footer {
+    background-color: rgba(0, 0, 0, 0.95);
+    width: 100%;
+    padding: 40px 0 20px;
+    color: var(--text-color);
+}
+
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 30px;
+}
+
+.footer-logo {
+    width: 250px;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.social-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 30px;
+    }
+    
+    .footer-logo {
+        margin: 0 auto;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+/* Hover Eff */
+.top-nav a:hover,
+.platform-nav a:hover,
+.footer-links a:hover {
+    color: var(--primary-color);
+}
+
+.collection-card:hover,
+.game-card:hover,
+.console-card:hover,
+.deal-card:hover {
+    transform: scale(1.05);
+}
+
+/* mobile */
+@media (max-width: 1024px) {
+    .hero {
+        height: 500px;
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+}

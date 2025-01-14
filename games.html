@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Store</title>
+    <link rel="stylesheet" href="./stylesheets/games.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="top-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="./image/logo/logo.png" alt="Logo of the website">
+            </div>
+
+            <div class="search">
+                <input type="text" placeholder="Search...">
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <!-- Original Navigation -->
+            <nav class="top-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="upcoming.html">Upcoming</a></li>
+                    <li><a href="f&q.html">Q & A</a></li>
+                    <li><a href="about.html">About/Contact Us</a></li>
+                </ul>
+            </nav>
+
+            <div class="user-actions">
+                <button class="cart-btn">
+                    <i class="fas fa-shopping-cart"></i>
+                </button>
+                <button class="user-btn">
+                    <i class="fas fa-user"></i>
+                </button>
+            </div>
+
+            <!-- Hamburger Menu Button -->
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <div class="mobile-menu-header">
+                    <button class="close-menu-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="upcoming.html">Upcoming</a></li>
+                        <li><a href="f&q.html">Q & A</a></li>
+                        <li><a href="about.html">About/Contact Us</a></li>
+                        <li><a href="games.html"><i class="fas games"></i> Games</a></li>
+                        <li><a href="consoles.html"><i class="fab consoles"></i> Consoles</a></li>
+                        <li><a href="periphals.html"><i class="fab peripherals"></i> Gaming peripherals</a></li>
+                    </ul>
+                </nav>
+                <div class="user-actions">
+                    <button class="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        Shopping Cart
+                    </button>
+                    <button class="user-btn">
+                        <i class="fas fa-user"></i>
+                        My Profile
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-header">
+        <div class="header-container">
+            <nav class="platform-nav">
+                <ul>
+                    <li><a href="games.html" class="active"><i class="fas games"></i> Games</a></li>
+                    <li><a href="consoles.html"><i class="fab consoles"></i> Consoles</a></li>
+                    <li><a href="periphals.html"><i class="fab peripherals"></i> Gaming peripherals</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
+    <!-- Main part -->
+<main class="main-content">
+    <!-- Top Rated Games -->
+    <section class="games-section">
+        <h2>Top Rated Games</h2>
+        <div class="games-grid">
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="./image/games/gameportrait.jpeg" alt="Game Cover">
+                    <div class="game-overlay">
+                        <p class="game-description">Game Size:
+                          Approximate Size: 10 GB
+                          Key Features:
+                          Genre: First-person shooter (FPS)
+                          Developer: LucasArts
+                          Publisher: LucasArts
+                          Release Date: March 31, 1997</p>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Game Name</h3>
+                    <div class="price">$1.99</div>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="./image/games/gameportrait1.jpeg" alt="Game Cover">
+                    <div class="game-overlay">
+                        <p class="game-description">Genre: Action-adventure, hack and slash
+                          Developer: Rebel Act Studios            
+                          Publisher: Codemasters, Codemasters Birmingham
+                          Release Date: February 20, 2001</p>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Game Name</h3>
+                    <div class="price">$5.99</div>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="./image/games/gameportrait2.jpeg" alt="Game Cover">
+                    <div class="game-overlay">
+                        <p class="game-description">Genre: Action-adventure, stealth
+                          Developer: Ubisoft Montreal (main studio), with contributions from other Ubisoft studios
+                          Publisher: Ubisoft
+                          First Release: November 13, 2007
+                          Latest Release: Assassin's Creed Nexus VR (November 16, 2023)
+                          Creator: Patrice Désilets, Jade Raymond, Corey May</p>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Game Name</h3>
+                    <div class="price">$12.09</div>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="./image/games/gameportrait3.jpeg" alt="Game Cover">
+                    <div class="game-overlay">
+                        <p class="game-description">Genre: Platformer, action-adventure
+                          Developer: Sonic Team (main studio), with contributions from other developers   
+                          Publisher: Sega 
+                          First Release: June 23, 1991 (Sonic the Hedgehog for Sega Genesis)
+                          Creator: Yuji Naka, Naoto Ohshima, Hirokazu Yasuhara</p>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Game Name</h3>
+                    <div class="price">$15.96</div>
+                </div>
+            </div>
+        </div>
+        <button class="see-more" onclick="window.location.href='404error.html';">See More</button>
+    </section>
+
+    <!-- Most Popular Games  -->
+    <section class="games-section">
+        <h2>Most Popular Games</h2>
+        <div class="games-grid">
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="./image/games/gameportrait4.webp" alt="Game Cover">
+                    <div class="game-overlay">
+                        <p class="game-description">Developer: Ogre Head Games
+                          Genre: Rogue-like, Action 
+                          Plot: Set in a fantasy world, players control Asura as he battles through various levels to defeat enemies and bosses.      
+                          Release Date: 2017</p>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Game Name</h3>
+                    <div class="price">$8.67</div>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="./image/games/gameportrait5.jpeg" alt="Game Cover">
+                    <div class="game-overlay">
+                        <p class="game-description">Developer: Square Enix, in collaboration with Acquire
+                          Publisher: Square Enix
+                          Release Date: July 13, 2018 (Nintendo Switch), June 7, 2019 (Windows), April 28, 2020 (Stadia), March 25, 2021 (Xbox One), June 5, 2024 (PlayStation 4 and PlayStation 5)
+                          Platform: Nintendo Switch, Windows, Stadia, Xbox One, PlayStation 4, PlayStation 5</p>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Game Name</h3>
+                    <div class="price">$4.39</div>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="./image/games/gameportrait6.jpeg" alt="Game Cover">
+                    <div class="game-overlay">
+                        <p class="game-description">Genre: First-person shooter (FPS), Hero shooter
+                          Developer: Hi-Rez Studios (Evil Mojo Games)
+                          Publisher: Hi-Rez Studios
+                          Release Date: May 8, 2018 (Windows), June 12, 2018 (Nintendo Switch) 
+                          Platforms: Microsoft Windows, PlayStation 4, Xbox One, Nintendo Switch, Stadia
+                          Game Modes: Siege, Onslaught, Team Deathmatch, Ranked</p>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Game Name</h3>
+                    <div class="price">$100.99</div>
+                </div>
+            </div>
+            <div class="game-card">
+                <div class="game-image">
+                    <img src="./image/games/gameportrait7.webp" alt="Game Cover">
+                    <div class="game-overlay">
+                        <p class="game-description">Genre: Battle royale, first-person hero shooter
+                          Developer: Respawn Entertainment
+                          Publisher: Electronic Arts
+                          Release Date: February 4, 2019 (PlayStation 4, Windows, Xbox One), March 9, 2021 (Nintendo Switch), March 29, 2022 (PlayStation 5, Xbox Series X/S), May 17, 2022 (Android, iOS)              
+                          Platforms: PlayStation 4, PlayStation 5, Xbox One, Xbox Series X/S, Nintendo Switch, Windows, Android, iOS
+                          Game Modes: Battle Royale, Arenas, Limited-Time Modes</p>
+                    </div>
+                </div>
+                <div class="game-info">
+                    <h3>Game Name</h3>
+                    <div class="price">$60.12</div>
+                </div>
+            </div>
+        </div>
+        <button class="see-more" onclick="window.location.href='404error.html';">See More</button>
+    </section>
+<!-- Trending -->
+<section>
+  <div class="trending-container">
+    <h2>Trending</h2>
+  <!-- This Week -->
+    <div class="trending-section">
+      <h3>This week</h3>
+      <div class="trending-wrapper">
+        <button class="nav-arrow prev"></button>
+        <div class="trending-grid" id="this-week">
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait8.jpeg" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $25</p>
+                  <p>Genre: Third-person shooter, survival, base management
+                    Developer: MY.GAMES B.V.
+                    Publisher: MY.GAMES B.V.
+                    Release Date: Available on multiple platforms, including Android, iOS, and Windows2
+                    Platforms: Android, iOS, Windows</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Left To Survive</h3>
+            </div>
+          </div>
+          
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait10.webp" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $99.99</p>
+                  <p>Genre: Tactical shooter
+                    Developer: Red Storm Entertainment, Ubisoft Paris, Ubisoft Milan
+                    Publisher: Ubisoft
+                    First Release: November 13, 2001 (Tom Clancy's Ghost Recon)
+                    Latest Release: October 4, 2019 (Tom Clancy's Ghost Recon Breakpoint)
+                    Platforms: Microsoft Windows, Mac OS, Xbox, PlayStation 2, GameCube, Xbox 360, PlayStation 3, PlayStation Portable, Wii, Nintendo 3DS, PlayStation 4, Xbox One, Stadia</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Ghost Recon</h3>
+            </div>
+          </div>
+          
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait11.jpeg" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $23.99</p>
+                  <p>Minimum: Windows 7 SP1/8.1/10 64-bit, AMD FX-4350/Intel Core i3-3210, 4GB RAM, AMD Radeon R7 260X/NVIDIA GeForce GTX 750 (2GB VRAM), DirectX 11, 30GB space Recommended: Windows 7 SP1/8.1/10 64-bit, AMD Ryzen 3 1200/Intel Core i5-6400, 6GB RAM, AMD Radeon RX 470/NVIDIA GeForce GTX 1060 6GB VRAM, DirectX 11, 30GB</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Fortnight</h3>
+            </div>
+          </div>
+          
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait12.webp" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $3.99</p>
+                  <p>SGod of War (2018) is an action-adventure game developed by Santa Monica Studio and published by Sony Interactive Entertainment. Here are the system requirements for the game:</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>God Of War</h3>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait13.jpg" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $7.99</p>
+                  <p>
+                    Outlast is a first-person survival horror game developed and published by Red Barrels. Released on September 4, 2013, the game follows investigative journalist Miles Upshur as he explores the dilapidated Mount Massive Asylum, which is overrun by deranged patients and dark secrets. Players must navigate the terrifying environment using stealth and resourcefulness, as combat is not an option. Equipped with a camcorder, Miles must rely on its night vision to see in the dark, adding to the game's suspenseful atmosphere.</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Out Last</h3>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait14.webp" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $5.00</p>
+                  <p>FIFA 23, developed by EA Canada and published by Electronic Arts, is a football simulation game offering realistic gameplay, extensive teams, and various modes. It requires Windows 10 64-bit, Intel Core i5 6600k/AMD Ryzen 5 1600 (minimum) or Intel Core i7 6700/AMD Ryzen 7 2700X (recommended), 8 GB RAM (minimum) or 12 GB RAM (recommended), NVIDIA GeForce GTX 1050 Ti/AMD Radeon RX 570 (minimum) or NVIDIA GeForce GTX 1660/AMD Radeon RX 5600 XT (recommended), DirectX 12, and 100 GB storage space.</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>FIFA</h3>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait15.jpg" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $9.01</p>
+                  <p>Released in July 2020 for PlayStation 4 and later for PlayStation 5 and Windows, the game follows the story of Jin Sakai, a samurai during the first Mongol invasion of Japan. As Jin, players must navigate the open world of Tsushima Island, choosing between honorable samurai combat and stealth tactics to protect the island and its people1. The game features stunning visuals, immersive gameplay, and a rich narrative inspired by samurai cinema and Japanese history</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Ghost Of Tsushima</h3>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait16.png" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $45.65</p>
+                  <p>Call of Duty: Black Ops is a first-person shooter game developed by Treyarch and published by Activision. Released in November 2010, it takes players behind enemy lines as an elite Black Ops soldier engaging in covert operations during the Cold War. The game features a cinematic single-player campaign, signature multiplayer gameplay, and the fan-favorite Zombies mode</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>COD Black Oops I</h3>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait17.jpg" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $4.95</p>
+                  <p>Call of Duty: Black Ops is a first-person shooter game developed by Treyarch and published by Activision. Released in November 2010, it takes players behind enemy lines as an elite Black Ops soldier engaging in covert operations during the Cold War. The game features a cinematic single-player campaign, signature multiplayer gameplay, and the fan-favorite Zombies mode</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>COD Black Oops II</h3>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait18.jpg" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $0.01</p>
+                  <p>Call of Duty: Black Ops II is the ninth installment in the Call of Duty series, developed by Treyarch and published by Activision. Released in November 2012, it propels players into a near-future Cold War with advanced technology and weapons. The game features a unique single-player campaign with two time periods, Strike Force missions, and various multiplayer modes.</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Genshin Impact</h3>
+            </div>
+          </div>
+
+        </div>
+        <button class="nav-arrow next"></button>
+      </div>
+    </div>
+
+    <!-- All The Time -->
+    <div class="trending-section">
+      <h3>All the time</h3>
+      <div class="trending-wrapper">
+        <button class="nav-arrow prev"></button>
+        <div class="trending-grid" id="all-time">
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait19.jpg" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $8.05</p>
+                  <p>This is an open-world action RPG developed by miHoYo and published by Genshin Impact. Released in September 2020, it takes place in the fantasy world of Teyvat, where players explore seven nations, meet diverse characters, and fight powerful enemies while searching for their lost sibling. The game features elemental combat, stunning visuals, and a beautiful soundtrack4</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Sniper II</h3>
+            </div>
+          </div>
+          
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait20.jpeg" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $0.99</p>
+                  <p>Asphalt 9: Legends is an arcade racing game developed by Gameloft and released in 2018. The game features stunning graphics and a wide selection of high-end cars from renowned manufacturers like Ferrari, Porsche, Lamborghini, and more2. Players can race through dynamic real-life locations, perform stunts, and compete in both single-player and multiplayer modes. The game offers a variety of events and challenges, allowing players to collect cars, customize their vehicles, and join racing clubs to compete with friends and other players around the world</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Ashplat 9</h3>
+            </div>
+          </div>
+          
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait21.webp" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $23.69</p>
+                  <p>Minimum Requirements: Windows XP/Vista/7, Intel Core 2 Duo 2.0 GHz / AMD Athlon 64 X2 4400+, 1 GB RAM, NVIDIA GeForce 7900 / ATI Radeon X1900, DirectX 9.0c, 8 GB available space. Recommended Requirements: Windows XP/Vista/7, Intel Core 2 Quad 2.4 GHz / AMD Phenom II X4 940, 2 GB RAM, NVIDIA GeForce GTX 260 / ATI Radeon HD 4870, DirectX 9.0c, 8 GB available space.</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Mirror's Edge</h3>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait22.jpg" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $10</p>
+                  <p>Minimum Requirements: Windows 10 64-bit, Intel Core i5-2550K 3.4GHz / AMD FX-8120 3.1 GHz, 6 GB RAM, NVIDIA GeForce GTX 660 / AMD Radeon HD 7870, DirectX 11, 50 GB available space. Recommended Requirements: Windows 10 64-bit, Intel Core i7-3770 3.4GHz / AMD FX-8350 4.2GHz, 16 GB RAM, NVIDIA GeForce GTX 1080 / AMD Radeon RX 5700, DirectX 11, 50 GB available space.</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Mafia definictitive</h3>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait23.jpg" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $0.60</p>
+                  <p>Minimum Requirements: Windows 10 64-bit, Intel Core i5-6600K / AMD FX-6300, 8 GB RAM, NVIDIA GeForce GTX 760 2GB / AMD Radeon R9 280 3GB, DirectX 11, 45 GB available space. Recommended Requirements: Windows 10 64-bit, Intel Core i7-2700K / AMD Ryzen 5 2600, 16 GB RAM, NVIDIA GeForce GTX 970 4GB / AMD Radeon RX 570 4GB, DirectX 11, 45 GB available space.</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>GTA III</h3>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait24.avif" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $5.89</p>
+                  <p>Minimum Requirements: Windows 10, Intel i5-4430 / AMD FX-6300, 8 GB RAM, NVIDIA GeForce GTX 960 2GB / AMD Radeon R7 370 2GB, DirectX 11, 40 GB available space. Recommended Requirements: Windows 10, Intel i5-6600K / AMD Ryzen 5 1600, 16 GB RAM, NVIDIA GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB, DirectX 11, 50 GB available space.</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Pubg Lite</h3>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait25.jpeg" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $0.99</p>
+                  <p>Minimum Requirements for Android: Android 6.0 or higher, 64-bit CPU, 2 GB RAM, 1.5 GB available space. Minimum Requirements for iOS: iOS 13 or higher, Compatible with iPhone 6S or newer, 2 GB RAM, 1.5 GB available space.</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Pubg New State</h3>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait26.webp" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $8.89</p>
+                  <p>Minimum Requirements: Windows 10, Intel Core i3-6100 / AMD Athlon X4 845, 4 GB RAM, NVIDIA GeForce GT 730 / AMD Radeon R7 240, DirectX 11, 20 GB available space. Recommended Requirements: Windows 10, Intel Core i5-6400 / AMD Ryzen 3 1200, 8 GB RAM, NVIDIA GeForce GTX 1050 / AMD Radeon RX 460, DirectX 11, 20 GB available space.</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Blood Strike</h3>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait27.jpg" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $0.65</p>
+                  <p>Minimum Requirements: Windows 10 64-bit, Intel Core i3-6600 / AMD Ryzen 3 1300X, 8 GB RAM, NVIDIA GeForce GTX 1050 / AMD Radeon RX 460, DirectX 12, 175 GB available space. Recommended Requirements: Windows 10 64-bit, Intel Core i5-6600K / AMD Ryzen 5 1600, 16 GB RAM, NVIDIA GeForce GTX 1060 / AMD Radeon RX 580, DirectX 12, 175 GB available space.</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>COD MW III</h3>
+            </div>
+          </div>
+
+          <div class="game-card">
+            <div class="game-image">
+              <img src="./image/games/gameportrait1.jpeg" alt="Game 1">
+              <div class="game-overlay">
+                <div class="game-description">
+                  <p>Price: $78.00</p>
+                  <p>Minimum Requirements: Windows 10 64-bit, Intel Core i3-6100 / AMD Athlon X4 845, 4 GB RAM, NVIDIA GeForce GT 730 / AMD Radeon R7 240, DirectX 11, 20 GB available space. Recommended Requirements: Windows 10 64-bit, Intel Core i5-6400 / AMD Ryzen 3 1200, 8 GB RAM, NVIDIA GeForce GTX 1050 / AMD Radeon RX 460, DirectX 11, 20 GB available space.</p>
+                </div>
+              </div>
+            </div>
+            <div class="game-info">
+              <h3>Blade</h3>
+            </div>
+          </div>
+        </div>
+        <button class="nav-arrow next"></button>
+      </div>
+      <button class="see-more" onclick="window.location.href='404error.html';">See More</button>
+    </div>
+  </div>
+  
+</section>
+</main>
+<footer>
+  <div class="container">
+      <div class="footer-content">
+          <div class="footer-logo">
+              <img src="./image/logo/logo.png" alt="Gaming Logo">
+          </div>
+          <div class="footer-links">
+              <a href="404error.html">Terms & Policy</a>
+              <a href="404error.html">Privacy Policy</a>
+              <a href="404error.html">Cookie Policy</a>
+              <a href="404error.html">Contact us</a>
+          </div>
+          <div class="social-links">
+              <a href="404error.html"><i class="fab fa-twitch"></i></a>
+              <a href="404error.html"><i class="fab fa-facebook"></i></a>
+              <a href="404error.html"><i class="fab fa-twitter"></i></a>
+              <a href="404error.html"><i class="fab fa-instagram"></i></a>
+              <a href="404error.html"><i class="fab fa-youtube"></i></a>
+          </div>
+      </div>
+      <div class="copyright">
+          <p>Copyright © 2025 All Rights Reserved.</p>
+      </div>
+  </div>
+</footer>
+  <script src="./javascripts/script.js"></script>
+  <script src="./javascripts/header.js"></script>
+</body>
+</html>
