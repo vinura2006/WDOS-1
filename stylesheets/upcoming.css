@@ -1,5 +1,6 @@
 :root {
     --primary-color: #ff4500;
+    --primary-color-dark: #cc3700; /* Added darker shade for hover */
     --background-dark: #1a1a1a;
     --text-color: #ffffff;
     --card-background: rgba(255, 255, 255, 0.1);
@@ -81,7 +82,8 @@ body {
     font-size: 1.2rem;
     cursor: pointer;
 }
-        /* active style for top nav bar */
+
+/* active style for top nav bar */
 .top-nav ul li a.active {
     color: var(--primary-color);
     font-size: 1.1rem; 
@@ -134,7 +136,6 @@ body {
     color: var(--text-color);
 }
 
-
 .search-btn {
     position: absolute;
     right: 10px;
@@ -157,7 +158,7 @@ body {
     height: 16px;
 }
 
-/* Hamburger Menu icon */
+/* Mobile Menu icon */
 .mobile-menu-btn {
     display: none; 
     background: transparent;
@@ -168,7 +169,7 @@ body {
     padding: 5px;
 }
 
-/* Mobile Menu Contaner */
+/* Mobile Menu Container */
 .mobile-menu {
     display: none;
     position: fixed;
@@ -218,7 +219,7 @@ body {
     padding: 10px 0;
 }
 
-/* Mobile Menu User  */
+/* Mobile Menu User */
 .mobile-menu .user-actions {
     margin-top: 20px;
     padding-top: 20px;
@@ -250,14 +251,15 @@ body {
 .mobile-menu .user-actions i {
     font-size: 1.2rem;
 }
-            /* mobile menu active effect */
+
+/* mobile menu active effect */
 .mobile-menu ul li a.active {
     color: var(--primary-color);
     font-size: 1.2rem;
     font-weight: bold;
 }
 
-        /*  Hide mobile elements when it is desktop */
+/* Hide mobile elements when it is desktop */
 @media (min-width: 769px) {
     .mobile-menu-btn, 
     .mobile-menu {
@@ -308,12 +310,7 @@ body {
     }
 }
 
-
-
-/*body*/
-
 /* Upcoming Section */
-
 .upcoming {
     padding: 50px 0;
     background: var(--background-dark);
@@ -359,18 +356,18 @@ body {
     border-radius: 50px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background-color 0.3s ease;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.add-to-cart i {
-    font-size: 1.2rem;
+.add-to-cart:hover {
+    background-color: var(--primary-color-dark); /* Fixed hover effect */
 }
 
-.add-to-cart:hover {
-    background: darken(var(--primary-color), 10%);
+.add-to-cart i {
+    font-size: 1.2rem;
 }
 
 .right-box {
@@ -383,11 +380,11 @@ body {
 .video-box {
     flex: 1;
 }
+
 .video-player {
     width: 100%;
     height: 315px;
 }
-
 
 .description-box {
     flex: 1;
@@ -396,28 +393,33 @@ body {
     border-radius: 10px;
     color: var(--text-color);
 }
-/* hover effect on advertiesment */
+
+/* hover effect on advertisement */
 .left-box {
     position: relative;
     overflow: hidden;
 }
+
 .left-box img {
     transition: transform 0.3s ease-in-out;
 }
+
 .left-box:hover img {
     transform: scale(1.05);
 }
+
 .add-to-cart {
     opacity: 0;
     transform: translateX(-50%) translateY(20px);
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
+
 .left-box:hover .add-to-cart {
     opacity: 1;
     transform: translateX(-50%) translateY(0);
 }
-            
-    /*for upcoming*/
+
+/* for upcoming */
 @media (max-width: 768px) {
     .upcoming-content {
         flex-direction: column;
@@ -436,26 +438,21 @@ body {
     }
 }
 
-
-/* February*/
+/* February */
 .february-upcming-carousel {
     background: #2a2a2a;
     padding: 30px;
     border-radius: 10px;
     margin-bottom: 30px;
+    position: relative;
+    padding: 0 50px;
+    overflow: hidden;
 }
 
 .container h2 {
     color: white;
     margin-bottom: 20px;
     padding-left: 10px;
-}
-
-.february-upcming-carousel {
-    margin-bottom: 40px;
-    position: relative;
-    padding: 0 50px;
-    overflow: hidden;
 }
 
 .february-upcming-carousel-track {
@@ -519,7 +516,7 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #ff4500;
+    background-color: var(--primary-color);
     border: none;
     color: white;
     display: flex;
@@ -531,7 +528,7 @@ body {
 }
 
 .arrow:hover {
-    background-color: #ff5722;
+    background-color: var(--primary-color-dark);
 }
 
 .left-arrow {
@@ -560,9 +557,7 @@ body {
     }
 }
 
-
-/* Heavily Anticipated  */
-
+/* Heavily Anticipated */
 .heavily-anticipated {
     padding: 50px 0;
     background: var(--background-dark);
@@ -607,8 +602,9 @@ body {
 
 .grid-item:hover {
     transform: scale(1.1);
-    border: 2px solid red;
+    border: 2px solid var(--primary-color);
 }
+
 
 .grid-item:hover .game-name::after {
     content: " - Coming Soon";
