@@ -414,6 +414,9 @@ body {
 .link-item:hover {
     background: rgba(255, 255, 255, 0.2);
 }
+section[id] {
+    scroll-margin-top: 100px; 
+}
 
 /* Grids for Sections */
 
@@ -440,12 +443,11 @@ body {
 
 .collection-card, .game-card, .console-card, .deal-card {
     background: var(--card-background);
-    /* text placed over the image */
     position: relative; 
     border-radius: 10px;
     overflow: hidden;
     transition: transform 0.3s ease;
-    height: 200px; /* Add this line to set a fixed height */
+    height: 200px; 
 }
 
 .collection-card:hover, .game-card:hover, .console-card:hover, .deal-card:hover {
