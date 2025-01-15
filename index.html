@@ -6,7 +6,6 @@
     <title>Gaming Store</title>
     <link rel="stylesheet" href="./stylesheets/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="manifest" href="/manifest.json">
 </head>
 <body>
   <header>
@@ -114,16 +113,16 @@
         <section class="quick-links">
             <div class="container">
                 <div>
-                    <a href="#" class="link-item">Game Collection →</a>
-                    <a href="#" class="link-item">Upcoming Games →</a>
-                    <a href="#" class="link-item">Explore the Latest Console Releases →</a>
-                    <a href="#" class="link-item">Pre-Owned Deals →</a>
+                    <a href="#game-collection" class="link-item">Game Collection →</a>
+                    <a href="#upcoming-games" class="link-item">Upcoming Games →</a>
+                    <a href="#console-releases" class="link-item">Explore the Latest Console Releases →</a>
+                    <a href="#pre-owned" class="link-item">Pre-Owned Deals →</a>
                 </div>
             </div>
         </section>
-        
 
-        <section class="game-collection">
+
+        <section id="game-collection" class="game-collection">
             <div class="container">
                 <h2>Game Collection</h2>
                 <div class="collection-grid">
@@ -149,8 +148,8 @@
                 <button class="see-more" onclick="location.href='games.html';">See More</button>
             </div>
         </section>
-
-        <section class="upcoming-games">
+        
+        <section id="upcoming-games" class="upcoming-games">
             <div class="container">
                 <h2>Upcoming Games</h2>
                 <div class="games-grid">
@@ -176,8 +175,8 @@
                 <button class="see-more" onclick="location.href='games.html';">See More</button>
             </div>
         </section>
-
-        <section class="console-releases">
+        
+        <section id="console-releases" class="console-releases">
             <div class="container">
                 <h2>Explore the Latest Console Releases</h2>
                 <div class="console-grid">
@@ -208,8 +207,8 @@
                 </div>
             </div>
         </section>
-
-        <section class="pre-owned">
+        
+        <section id="pre-owned" class="pre-owned">
             <div class="container">
                 <h2>Pre-Owned Deals</h2>
                 <div class="deals-grid">
@@ -280,7 +279,7 @@
                     </div>
                 </div>
             </div>
-        </section>        
+        </section>     
 
     </main>
 
@@ -309,8 +308,6 @@
             </div>
         </div>
     </footer>
-
-    <script src="./javascripts/script.js"></script>
     <script src="./javascripts/header.js"></script>
 </body>
 </html>
